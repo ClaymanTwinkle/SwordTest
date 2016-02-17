@@ -1,7 +1,7 @@
 package list;
 
 /**
- * 环链表
+ * 问题描述：判断链表是否是环结构
  * @author kesar
  *
  */
