@@ -1,6 +1,6 @@
 package array;
 /**
- * 问题描述：输入一个字符数组，打印出字符的全组合。例如：输入{a,b,c}输出a、b、c、ab、ac、bc、abc
+ * 问题描述：输入一个字符数组，打印出字符的全布组合。例如：输入{a,b,c}输出a、b、c、ab、ac、bc、abc
  * 
  * @author kesar
  * 
