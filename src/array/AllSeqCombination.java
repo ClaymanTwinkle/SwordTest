@@ -56,6 +56,15 @@ public class AllSeqCombination
 		}
 	}
 
+	/**
+	 * 
+	 * @Description: 交换数组中两个数的值
+	 * @param @param cs
+	 * @param @param i
+	 * @param @param j   
+	 * @return void  
+	 * @throws
+	 */
 	private static void exch(char[] cs, int i, int j)
 	{
 		if (i == j)

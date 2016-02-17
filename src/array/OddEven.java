@@ -39,6 +39,14 @@ public class OddEven
 		}
 	}
 	
+	/**
+	 * 
+	 * @Description: 交换数组中两个数的值
+	 * @param @param nums
+	 * @param @param index1
+	 * @param @param index2   
+	 * @return void  
+	 */
 	private static void exch(int[] nums,int index1,int index2)
 	{
 		if(index1==index2)

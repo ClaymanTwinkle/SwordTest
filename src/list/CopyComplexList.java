@@ -2,7 +2,8 @@ package list;
 import java.util.HashMap;
 
 /**
- * 问题描述：复制一个复杂链表。 在复杂链表中，每个结点除了有一个指向下一个结点的next指针外，还有一个sibing指向链表中任意结点或者NULL。
+ * 问题描述：
+ * 复制一个复杂链表。 在复杂链表中，每个结点除了有一个指向下一个结点的next指针外，还有一个sibing指向链表中任意结点或者NULL。
  * 
  * @author kesar
  * 
