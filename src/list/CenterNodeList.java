@@ -2,8 +2,6 @@ package list;
 
 import java.util.Arrays;
 
-import list.LastList.ListNode;
-
 /**
  * 
  * ClassName: CenterNodeList 
@@ -63,4 +61,26 @@ public class CenterNodeList
 		System.out.println(Arrays.toString(getCenterNode(new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4)))))));
 	}
 
+	static class ListNode
+	{
+		int val;
+		ListNode next;
+
+		public ListNode(int val)
+		{
+			this.val = val;
+		}
+
+		public ListNode(int val, ListNode next)
+		{
+			this.val = val;
+			this.next = next;
+		}
+
+		@Override
+		public String toString()
+		{
+			return "ListNode [val=" + val + "]";
+		}
+	}
 }
