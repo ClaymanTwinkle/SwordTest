@@ -1,13 +1,15 @@
 package tree;
 
 /**
- * 问题描述：将一棵二叉搜索树转成一条排序好的双向链表。
- * 要求：不能创建新结点。
+ * 问题描述：将一棵二叉搜索树转成一条排序好的双向链表。要求不能创建新结点。
  * @author kesar
  *
  */
 public class BST2BWL
 {
+	/**
+	 * 树节点
+	 */
 	static class TreeNode
 	{
 		int val;

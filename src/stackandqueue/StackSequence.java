@@ -2,7 +2,7 @@ package stackandqueue;
 import java.util.Stack;
 
 /**
- * 输入数字不重复的两个整数序列A,B，A是某栈的压栈的序列，B是某栈的出栈的序列，验证AB是否为同一栈的序列
+ * 问题描述：输入数字不重复的两个整数序列：序列A,序列B，A是某栈的压栈的序列，B是某栈的出栈的序列，验证AB是否为同一栈的序列
  * @author kesar
  *
  */

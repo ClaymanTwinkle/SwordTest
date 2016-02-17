@@ -3,7 +3,7 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 /**
- * 问题描述实现栈的pop、push、min(得到栈中最小值)方法
+ * 问题描述：实现栈的pop、push、min(得到栈中最小值)方法
  * 
  * @author kesar
  * 
