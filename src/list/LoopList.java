@@ -14,16 +14,13 @@ public class LoopList
 	 */
 	public static boolean isLoop(ListNode head)
 	{
-		if(head==null)
+		if(head==null||head.next==null)
 		{
 			return false;
 		}
 		ListNode pSlow=head;
 		ListNode pFast=head.next;
-		if(pFast==null)
-		{
-			return false;
-		}
+		
 		while (pFast.next!=null)
 		{
 			if(pFast.equals(pSlow))
