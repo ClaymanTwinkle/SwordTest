@@ -39,6 +39,9 @@ public class FindPathByNodeValue
 		paths.pop();
 	}
 
+	/**
+	 * 打印路径
+	 */
 	static void printPath(Stack<Integer> paths)
 	{
 		if (paths.isEmpty())

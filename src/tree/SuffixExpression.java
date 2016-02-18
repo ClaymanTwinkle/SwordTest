@@ -2,7 +2,7 @@ package tree;
 import java.util.Stack;
 
 /**
- * 后缀表达式转二叉树
+ * 问题描述：后缀表达式转二叉树
  * @author kesar
  *
  */

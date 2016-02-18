@@ -7,6 +7,35 @@ package tree;
  */
 public class IncludeSonTree
 {
+	/**
+	 * 树结点
+	 */
+	static class TreeNode
+	{
+		int value;
+		TreeNode left;
+		TreeNode right;
+
+		public TreeNode(int value)
+		{
+			this.value = value;
+		}
+
+		public TreeNode(int value, TreeNode left, TreeNode right)
+		{
+			this.value = value;
+			this.left = left;
+			this.right = right;
+		}
+
+		@Override
+		public String toString()
+		{
+			return "TreeNode [value=" + value + ", left=" + left + ", right="
+					+ right + "]";
+		}
+	}
+	
 	public static boolean isIncludeTree(TreeNode parent, TreeNode child)
 	{
 		boolean result = false;
@@ -14,7 +43,7 @@ public class IncludeSonTree
 		{
 			return result;
 		}
-		if (parent.equals(child))
+		if (parent.value==child.value)
 		{
 			result = hasTree(parent, child);
 		}
@@ -36,17 +65,13 @@ public class IncludeSonTree
 		{
 			return true;
 		}
-		if (parent == null)
+		if (parent == null||parent.value!=child.value)
 		{
 			return false;
 		}
-		if (!parent.equals(child))
-		{
-			return false;
-		}
+		
 		return hasTree(parent.left, child.left)
 				&& hasTree(parent.right, child.right);
-
 	}
 
 	/**
@@ -59,42 +84,5 @@ public class IncludeSonTree
 				new TreeNode(7));
 		TreeNode child = new TreeNode(8,null,new TreeNode(7,new TreeNode(0),null));
 		System.out.println(isIncludeTree(parent, child));
-	}
-
-	static class TreeNode
-	{
-		int value;
-		TreeNode left;
-		TreeNode right;
-
-		public TreeNode(int value)
-		{
-			this.value = value;
-		}
-
-		public TreeNode(int value, TreeNode left, TreeNode right)
-		{
-			this.value = value;
-			this.left = left;
-			this.right = right;
-		}
-
-		@Override
-		public boolean equals(Object obj)
-		{
-			if (obj != null && obj instanceof TreeNode)
-			{
-				TreeNode other = (TreeNode) obj;
-				return other.value == value;
-			}
-			return false;
-		}
-
-		@Override
-		public String toString()
-		{
-			return "TreeNode [value=" + value + ", left=" + left + ", right="
-					+ right + "]";
-		}
 	}
 }

@@ -2,7 +2,7 @@ package tree;
 
 /**
  * 
- * 输出树的镜像
+ * 问题描述：输出树的镜像
  * @author kesar
  *
  */
